@@ -3,7 +3,16 @@ import prompt
 
 
 def welcome_user():
-    """Get an user's name and promt that username."""
+    """
+    Welcomes and gets username and prompt that username.
+
+    Returns
+    -------
+    name : str
+        Username prompt.
+    """
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print('Hello, {0}!'.format(name))
+
+    return name
